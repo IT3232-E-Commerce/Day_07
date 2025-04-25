@@ -1,5 +1,10 @@
 package lk.uov.fas.it.models;
 
-public class under_graduate {
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
+@Entity
+public class under_graduate extends person {
+	private String degree;
+	private String university;
 }
