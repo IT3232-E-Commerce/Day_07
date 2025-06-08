@@ -17,6 +17,6 @@ public class Department {
 	private String name;
 	private Date established;
 	@OneToMany(mappedBy = "department")
-	private List<Employee> employees;
+	private List<Employee> employee;
 
 }

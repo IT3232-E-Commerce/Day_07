@@ -20,5 +20,5 @@ public class Employee extends Person {
 	private Department department;
 	@ManyToMany
 	@JoinTable(name = "project_assignments", joinColumns = @JoinColumn(name = "emp_id"), inverseJoinColumns = @JoinColumn(name = "pro_id"))
-	private List<Project> Project;
+	private List<Project> project;
 }
