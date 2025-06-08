@@ -12,6 +12,6 @@ public class Project {
 	private int id;
 	private String name;
 	private long totalCost;
-	@ManyToMany
-	private List<Employee> employee;
+	@ManyToMany(mappedBy = "projects")
+	private List<Employee> employees;
 }
